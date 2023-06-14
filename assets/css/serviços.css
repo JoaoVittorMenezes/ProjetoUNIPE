@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&family=Share+Tech+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    color: white;
+    background-color: #2f2da8;
+}
+.container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, #000000, #13185a,#ffffff00 );
+}
+/* NAVEGATION */
+header {
+    height: 9.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid white ;
+}  
+#navegation ul {
+    list-style: none;
+    display: flex;
+    column-gap: 3rem;
+}
+#navegation a {
+    color: white;
+    text-decoration: none;
+}
+#navegation a:hover{
+    border-bottom: white solid 1px;
+    
+}
+#slogan {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Major Mono Display', monospace;
+}
+/* Botões de login / registro */
+
+.top-section-right,.top-section-right-btn-entrar > a > .btn, .top-section-right > .top-section-right-btn-registrar > a > .btn {
+    text-decoration: none;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 600;
+    padding: 7px;
+    color: white;
+    background-color: #fafafa00;
+    border-radius: 10px;
+    border: none;
+    transition: 0.5s;
+}
+.top-section-right > .top-section-right-btn-entrar{
+    display: inline;
+
+}
+.top-section-right > .top-section-right-btn-registrar{
+    display: inline;
+    padding-right: 10px;
+    border-right: white solid 1px;
+}
+.top-section-right > .entrar{
+    margin-left: 4rem;
+}
+.top-section-right, .top-section-right-btn-entrar > a > .btn:hover,.top-section-right > .top-section-right-btn-registrar > a > .btn:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+.top-section-right-btn-entrar > a > .btn:hover,.top-section-right-btn-registrar > a > .btn:hover{
+    color: white;
+    border: white solid 1px;
+}
+/* SERVIÇOS */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main a {
+    text-decoration: none;
+}
+
+.firstRow {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;   
+}
+
+.secondRow {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5rem 0;
+}
+
+.card {
+    height: 50vh;
+    width: 20vw;
+    background-color: rgb(26, 27, 73);
+    border-radius: 20px;
+    transition: 0.3s;
+    border: 2px solid #a096ff83;
+}
+
+.card:hover {
+    scale: 1.1;
+    border: 2px solid #cfc9ff;
+    box-shadow: 3px 3px 10px #00000071, -3px -3px 10px #00000071;
+}
+
+.iconBlock {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+
+.fa {
+    color: #efedff;
+    font-size: 3rem;
+}
+
+.cardTitle {
+    color: #efedff;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.cardText {
+    color: #efedff;
+    text-align: center;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
+}
+
+.fa-window-maximize, #websiteTitle {
+    color: #f374d1
+}
+
+.websiteIcon {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #f374d163;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.fa-database, #databaseTitle {
+    color: #ff9c3f;
+}
+
+.databaseIcon {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #fda24d79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.fa-lightbulb, #consultoriaTitle {
+    color: #6bd1ff;
+}
+
+.consultoriaIcon {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #6bd0ff48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.fa-desktop, #designTitle {
+    color: #e7c428;
+}
+
+.designIcon {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #e7ca2856;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+
+.fa-shield, #securityTitle {
+    color: #f13e44;
+}
+
+.securityIcon {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #f13e4452;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.fa-mobile-screen-button, #mobileTitle {
+    color: #b8eb41;
+}
+
+.mobileIcon {
+    height: 4.5rem;
+    width: 4.5rem;
+    background-color: #b8eb4163;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 1600px) {
+    .cardText {
+        font-size: 0.9rem;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .card {
+        width: 25vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .cardText {
+        font-size: 0.8rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .top-section-right > .top-section-right-border-btn {
+        border-right: none;
+        padding: 0;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 0.3rem
+    }
+    .top-section-right > .top-section-right-btn-entrar {
+        padding-top: 0.2rem;
+    }
+    .top-section-right {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .top-section-right .btn {
+        padding: 0;
+    }
+    .top-section-right > .top-section-right-border-btn > .btn {
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    #slogan {
+        text-align: center;
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .card {
+        width: 30vw;
+    }
+    #navegation ul {
+        column-gap: 1rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .iconBlock {
+        padding-top: 1rem;
+    }
+    .cardTitle {
+        margin-top: 0.8rem;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+    .fa {
+        font-size: 2rem;
+    }
+    .iconBG {
+        height: 4rem;
+        width: 4rem;
+    }
+    .cardText {
+        font-size: 0.7rem;
+    }
+    .firstRow {
+        padding-top: 3.5rem;
+    }
+    .secondRow {
+        padding: 3.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .cardText {
+        font-size: 0.6rem;
+    }
+    #slogan {
+        font-size: 1.8rem;
+    }
+    ul li {
+        font-size: 0.9rem;
+    }
+    .top-section-right {
+        font-size: 0.8rem;
+    }
+    .registro, .entrar {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #slogan {
+        font-size: 1.3rem;
+    }
+    .iconBlock {
+        padding-top: 0.8rem;
+    }
+    .cardTitle {
+        margin-top: 0.6rem;
+    }
+    h2 {
+        font-size: 0.9rem;
+    }
+    .fa {
+        font-size: 1.5rem;
+    }
+    .iconBG {
+        height: 3rem;
+        width: 3rem;
+    }
+    .cardText {
+        font-size: 0.5rem;
+    }
+    .firstRow {
+        padding-top: 2.5rem;
+    }
+    .secondRow {
+        padding: 2.5rem 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #navegation ul {
+        column-gap: 0.5rem;
+    }
+    #slogan {
+        font-size: 1.5rem;
+    }
+    ul li {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .registro ,.entrar{
+        font-size: 0.6rem;
+    }
+    #navegation ul {
+        column-gap: 0.2rem;
+    }
+    #slogan {
+        font-size: 1rem;
+    }
+    .cardText {
+        font-size: 0.45rem;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+    .iconBlock {
+        padding-top: 0.4rem;
+    }
+    .cardTitle {
+        margin-top: 0.4rem;
+    }
+    .cardText {
+        padding: 0 1rem;
+        margin-top: 0.8rem;
+    }
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 0.3rem;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .cardText {
+        font-size: 0.4rem;
+        margin-top: 0.5rem;
+    }
+    h2 {
+        font-size: 0.7rem;
+    }
+}
